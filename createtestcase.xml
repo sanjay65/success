@@ -1,0 +1,14 @@
+<suite name="CreditCare">
+	<listeners>
+		<listener class-name="com.tsys.automation.creditcare.na.core.ExecutionWatcher"></listener>
+	</listeners>
+	<parameter name="environment" value="uat" />
+	<test name="SFBank">
+		<classes>
+			
+		    <class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFAddEditAndDeletePaymentAccountTestCase"></class>		
+					
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

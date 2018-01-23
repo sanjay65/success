@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file. Any modifications will be overwritten. 
+	To include a user specific buildfile here, simply create one in the same 
+	directory with the processing instruction <?eclipse.ant.import?> as the first 
+	entry and export the buildfile again. -->
+<project basedir="." default="compile" name="CreditCareAutomation">
+	<property name="basedir" value="." />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="src" value="${basedir}/src" />
+	<property name="bin" value="${basedir}/bin" />
+	<property name="report-dir" value="${basedir}/HTML_Report" />
+	<property name="testng-report-dir" value="${basedir}/test-output" />
+	<property name="archive-report-dir" value="${basedir}/Archive_Report" />
+	<property name="screenshot" value="${basedir}/Screenshots" />
+
+	<path id="classpath">
+		<pathelement location="${bin}" />
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpath="${lib}/testng-6.11.jar" />
+	
+	<target name="clean">
+		<copy todir="${archive-report-dir}" overwrite="false">
+			<fileset dir="${report-dir}" />
+		</copy>
+		<delete>
+			<fileset dir="${report-dir}" />
+		</delete>
+		<delete dir="${bin}" />
+		<delete dir="${testng-report-dir}" />
+		<delete dir="${screenshot}" />
+	</target>
+
+	<target name="create" depends="clean">
+		<mkdir dir="${bin}" />
+		<mkdir dir="${screenshot}" />
+	</target>
+
+	<target name="compile" depends="create">
+		<javac srcdir="${src}" classpathref="classpath"
+			includeAntRuntime="No" destdir="${bin}" />
+	</target>
+
+	<target name="naSuite" depends="compile">
+		<testng classpathref="classpath">
+			<xmlfileset dir="${basedir}" includes="NASuite.xml" />
+		</testng>
+	</target>
+</project>

@@ -1,0 +1,264 @@
+<suite name="CreditCare">
+	<listeners>
+		<listener class-name="com.tsys.automation.creditcare.na.core.ExecutionWatcher"></listener>
+	</listeners>
+	<parameter name="environment" value="uat" />
+	<test name="ADSBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSDownloadTransactionAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSRecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSSearchUserEditAndDeleteTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSSearchAndManageRequestTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.ADS.testcases.ADSRequestNewCardTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="BPPRBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRDownloadTransactionAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRRecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BPPR.testcases.BPPRSearchUserEditAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="RogersBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersDownloadTransactionAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersRecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersRequestNewCardTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersAddEditAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Rogers.testcases.RogersSearchUserEditAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TDBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDAddEditAndDeletePaymentRecurringPaymentAndAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDAddEditAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDDownloadTransactionAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDRecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.TD.testcases.TDSearchUserEditAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="BMOBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMODownloadTransactionAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOAddEditAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMORecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOSearchAndManageRequestTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMORequestCardRequestTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.BMO.testcases.BMOSearchUserEditAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="CFGBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGManageAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGRequestForCopyOfCardHolderAgreementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CFG.testcases.CFGSearchUserAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="CompassBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.ComapssRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassAddressPhoneChangeTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassManageAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassSearchUserAndDeleteTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Compass.testcases.CompassVerifyAllLinksTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="CBKCBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCAccountMaintenanceTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCManageAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCSearchUserAndDeleteTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.CBKC.testcases.CBKCVerifyAllLinksTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="WMCBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCAccountMaintenanceTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCSearchUserAndDeleteTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.WMC.testcases.WMCManageYourProfileTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="ChaseBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseManageAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseAddressPhoneChangeTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.Chase.testcases.ChaseSearchUserAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="FBPRBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRManageYourProfileTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRAccountMaintenanceTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRAddAndDeleteSwitchUserTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRRecoverUsernameAndPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRManageAlertsTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.FBPR.testcases.FBPRSearchUserAndDeleteTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="SFBank">
+		<classes>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFConsumerRegistrationTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFRecoverPasswordTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFTransactionSummaryAndStatementTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFVerifyAllLinksTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFSearchUserAndDeleteTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFAddEditAndDeletePaymentAccountTestCase"></class>
+			<class
+				name="com.tsys.automation.creditcare.na.SF.testcases.SFAccountMaintenanceTestCase"></class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
