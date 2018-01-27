@@ -1,6 +1,0 @@
-public class Helloworld {
- public static viod main(string[]args) {
- // Prints "Hello world"in the terminal window.
- system.out.println("hello world");
- }
- }
